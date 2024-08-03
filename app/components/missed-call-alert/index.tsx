@@ -12,6 +12,7 @@ export const MissedCallAlert = ({ seleceted, handleSelect }: any) => {
       </div>
       <label className="switch">
         <input
+          defaultChecked={seleceted.mca === 1 ? true : false}
           type="checkbox"
           onChange={(e) => {
             const val = e.target.checked === true ? 1 : 0;
